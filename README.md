@@ -21,10 +21,10 @@ Note that we have chosen unique names for the optimized parameters to avoid erro
 * Ca2 - CA
 
 
-## Example: Double stranded DNA (PDB-id: 1ENE) in 0.06 M of CaCl2
+## Example: Double stranded DNA (PDB-id: 477D) in 0.06 M of CaCl2
 ******************
-Folder contains all files for an MD simulation of a 10-bp double-stranded DNA (PDB-id: 1ENE) with GROMACS.
-Initial coordinates are given in out.gro.
+The folder 477D_DNA contains all files for an MD simulation of a 12-bp double-stranded DNA (PDB-id: 477D) with GROMACS.
+Initial coordinates are given in out-ions.gro.
 
 ## Citation
 ******************
