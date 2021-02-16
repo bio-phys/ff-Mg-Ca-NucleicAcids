@@ -1,0 +1,57 @@
+;
+;	File 'topol.top' was generated
+;	By user: secruz (32085)
+;	On host: tbsl013
+;	At date: Thu Jan  7 20:00:16 2021
+
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                 :-) GROMACS - gmx pdb2gmx, VERSION 5.1.4 (-:
+;	
+;	Executable:   /home/tb/secruz/mylocal/bin/gmx
+;	Data prefix:  /home/tb/secruz/mylocal
+;	Command line:
+;	  gmx pdb2gmx -f 477d.pdb -ff amber99bsc1 -missing
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./amber99bsc1.ff/forcefield.itp"
+#include "./na_ionsTIP3P.ff/ff_ions.itp"
+
+; Include chain topologies
+#include "topol_DNA_chain_A.itp"
+;#include "posre_DNA_chain_A.itp"
+
+#include "topol_DNA_chain_B.itp"
+;#include "posre_DNA_chain_B.itp"
+
+
+; Include water topology
+#include "./amber99bsc1.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "./amber99bsc1.ff/ions.itp"
+#include "./na_ionsTIP3P.ff/ions.itp"
+
+
+[ system ]
+; Name
+5'-D(*GP*GP*CP*GP*AP*AP*TP*TP*CP*GP*CP*G)-3' in water
+
+[ molecules ]
+; Compound        #mols
+DNA_chain_A         1
+DNA_chain_B         1
+SOL         16260
+Ca2              29
+CXY              36
