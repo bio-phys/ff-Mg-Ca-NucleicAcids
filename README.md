@@ -23,8 +23,8 @@ Note that we have chosen unique names for the optimized parameters to avoid erro
 
 ## Example: Double stranded DNA (PDB-id: 477D) in 0.06 M of CaCl2
 ******************
-The folder 477D_DNA contains all files for an MD simulation of a 12-bp double-stranded DNA (PDB-id: 477D) with GROMACS.
-Initial coordinates are given in out-ions.gro.
+The folder example_477d contains all files for an MD simulation with GROMACS of a 12-bp double-stranded DNA (PDB-id: 477D) with the optimized parameters.
+Initial coordinates are given in 477d.gro.
 
 ## Citation
 ******************
