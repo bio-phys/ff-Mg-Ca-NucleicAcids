@@ -29,7 +29,9 @@ Initial coordinates are given in 477d.gro.
 ## Citation
 ******************
 If you use our optimized parameters for Mg2+ and Ca2+ optimized for the interactions with nucleic acids, please cite:
+
 S. Cruz-León, K. K. Grotz  and N. Schwierz, J. Chem. Phys. **154**, 171102 (2021)
+https://aip.scitation.org/doi/full/10.1063/5.0048113
 
 
 Implementation has been tested by Sergio Cruz-León and Kara K. Grotz.
